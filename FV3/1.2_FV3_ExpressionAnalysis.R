@@ -21,4 +21,5 @@ results = t(apply(tissueexpr, 1, function(Y){
 
 colnames(results) = c("B6", "BFRMI860", "pvalue")
 
+setwd("/home/aimee/FV3 Data")
 write.table(results, "FV3_ExpressionAnalizedAll.txt", sep="\t", col.names = TRUE)
